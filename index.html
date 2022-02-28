@@ -5,46 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
-    <!-- bootstrap Library -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <!-- Jquery Library-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Javascript Library -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- External css -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
-        rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/8616856aa3.js" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME -->
     <!--Linking External CSS-->
     <link rel="stylesheet" href="style.css" type="text/css" />
     <!-- Javascript file -->
     <script src="js/main.js"></script>
-    <title>RITRUG</title>
+    <title>Ritrug</title>
 </head>
 
 <body>
-    <!--Header of Webpage-->
-    <!--=================================================================================================-->
-    <!-- Header section for mobile -->
-    <div class="mobile-header">
-        <div class="hidden-lg">
-            <div class="header">
-                <!-- top-header -->
-                <div class="top-head">Thousands of Styles In-Stock! Rite Here. Rite Now. ™</div>
+    <header>
+
+        <div class="container-fluid">
+            <div class="row header-wrap">
+                <p class="text-center top">
+                    Thousands of Styles In-Stock! Rite Here. Rite Now. ™
+                </p>
                 <!-- Animated Sidenav -->
-                <div id="mySidenav" class="sidenav">
+                <div id="mySidenav" class="nav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="ipad-bar">&times;</a>
                     <div class="mobilemenu-login">
                         <div class="form-group has-feedback has-search">
@@ -61,710 +45,749 @@
                     <a href="#">care & support</a>
                     <a href="#">Contact Us</a>
                 </div>
-                <!-- bar icon -->
-                <span class="col-xs-3 bar-icon" style="font-size:30px;cursor:pointer" onclick="openNav()"
-                    class="burger" style="float: left;">&#9776;</span>
-                <!-- Logo -->
-                <div class="col-xs-6  text-center bar-icon">
+              
+                <div class="hidden-sm hidden-xs subNav">
+                    <div class="container">
+                        <ul class="list">
+                            <li>
+                                <a href="#"><span class="fa-solid fa-hammer"></span>For Professionals</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-solid fa-clipboard-check"></span>Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-solid fa-calculator"></span> Financing</a>
+                            </li>
+                            <li class="locations">
+                                <a href="#"><span class="fa-solid fa-location-dot"></span>Find a Location</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-solid fa-star"></span>Favorites</a>
+                            </li>
+                            <li class="cart">
+                                <a href="/cart"><span class="fa-solid fa-cart-shopping"></span>Cart<span
+                                        class="badge">0</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-lg-4 col-xs-6">
+        <!-- Sidenav bar -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span style="font-size: 30px; cursor: pointer" id="burgerM" class="burger"
+                                    onclick="openNav()">&#9776;
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side navbar end -->
                     <a href="#"><img
                             src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/riterug-logo.svg?v=6170021899863961666"
-                            alt="riterug logo" class="text-center bar-icon" id="logo-mobile" style="
-                            width: 100px;
-                            height: auto;"></a>
+                            alt="Logo" style="
+                       width: 200px;
+                       height: auto;
+                      margin-top: 11px;
+                    " class="logo" /></a>
                 </div>
-               
-                <!-- cart section -->
-                <div class="col-xs-3 text-right bar-icon">
-                    <div class="heading-cart">
-                        <a href="/pages/locations"><i class="fas fa-map-marker-alt top" aria-hidden="true"></i><span
-                                class="text-right bar-icon"></span></a>
-                        <a href="/cart"><i class="fas fa-shopping-cart top" aria-hidden="true"></i><span
-                                class="text-right bar-icon"></span></a>
-                    </div>
+
+                <div class="col-md-5 col-xs-12">
+                    <form class="search">
+                        <label for="searchBox"> </label>
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input type="text" placeholder="Search" name="q" id="searchBox" />
+
+                    </form>
+                </div>
+
+                <div class="col-md-1 hidden-xs hidden-sm side_head">
+                    <h6>FREE</h6>
+                    <div class="in-home">In-Home</div>
+                    <div class="in-home">Shopping</div>
+                </div>
+                <div class="col-md-3 col-lg-2 btnSchedule hidden-xs hidden-sm">
+                    <form class="schedule-today" action="#">
+                        <button type="submit" class="schedule-btn" style="background-color: #c41230">
+                            Schedule Today<i class="fas fa-caret-right"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-        </div>
-                <!-- Desktop header part -->
-                <div class="row header-rit">
-                    <div class="top-head hidden-sm hidden-xs hidden-md"> Thousands of Styles In-Stock! Rite Here. Rite
-                        Now. ™
-                    </div>
-                    <div class="second-nav hidden-sm hidden-xs hidden-md">
-                        <a href="#">For professionals</a>
-                        <a href="#">Reviews</a>
-                        <a href="#">Financing</a>
-                        <a href="#">Find a location</a>
-                        <a href="#">favorites</a>
-                        <a href="#">Financing </a>
-                    </div>
-                    <!-- ritrug Logo -->
-                    <div class="col-md-3 hidden-xs hidden-md hidden-sm mobile-logo" id="logo">
-                        <a href="#"><img
-                                src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/riterug-logo.svg?v=6170021899863961666"
-                                alt="riterug logo" class="img-responsive" id="logo-id"></a>
-                    </div>
-                 
-                    <!--Text-right-->
-                    <div class="col-md-3 text-right hidden-xs hidden-md hidden-sm">
-                        <div class="side-head">
-                            <h1>FREE<br></h1><span>In-Home<br></span>
-                            <p>Shopping</p>
-                            <button class="btn signin">Schedule today </button>
-                            <a><i class='fa fa-angle-right'></i></a>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Navbar creation -->
-                 <nav class="hidden-sm hidden-xs">
-                    <div class="menu">
-                      <div class="dropdown">
+            <nav class="hidden-sm hidden-xs">
+                <div class="menu">
+                    <div class="dropdown">
                         <button class="dropbtn">carpet</button>
                         <div class="dropdown-content">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Type</a>
-                                <a class="sub_menu" href="#">Loop & Berber</a>
-                                <a class="sub_menu" href="#">Texture, Plush & Twist</a>
-                                <a class="sub_menu" href="#">Pattern</a>
-                                <a class="sub_menu" href="#">Carpet Tile</a>
-                                <a class="sub_menu" href="#">All Carpet</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Color</a>
-                                <a class="sub_menu" href="#">Beige & Brown</a>
-                                <a class="sub_menu" href="#">Blue</a>
-                                <a class="sub_menu" href="#">Green</a>
-                                <a class="sub_menu" href="#">Grey & Black</a>
-                                <a class="sub_menu" href="#">Multi-Color</a>
-                                <a class="sub_menu" href="#">Orange</a>
-                                <a class="sub_menu" href="#">Pink & Purple</a>
-                                <a class="sub_menu" href="#">Red & Rust</a>
-                                <a class="sub_menu" href="#">White & Ivories</a>
-                                <a class="sub_menu" href="#">Yellow & Gold</a>
-                              </div>
-          
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Carpet Options</a>
-                                <a class="sub_menu" href="#">Area Rugs</a>
-                                <a class="sub_menu" href="#">Custom Area Rugs</a>
-                                <a class="sub_menu" href="#">Custom Stair Runners</a>
-                              </div>
-          
-                              <div class="col-md-4">
-                                <div class="collection-image">
-                                  <img
-                                    src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/carpet-yukon-maple_600x600.jpg?v=1633641800"
-                                    alt="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading">Shop by Type</li>
+                                            <li class="submenu">Loop & Berber</li>
+                                            <li class="submenu">Texture, Plush & Twist</li>
+                                            <li class="submenu">Pattern</li>
+                                            <li class="submenu">Carpet Til</li>
+                                            <li class="submenu">All Carpet</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading">Shop by Color</li>
+                                            <li class="submenu">Beige & Brown</li>
+                                            <li class="submenu">Blue</li>
+                                            <li class="submenu">Green</li>
+                                            <li class="submenu">Grey & Black</li>
+                                            <li class="submenu">Multi-Color</li>
+                                            <li class="submenu">Ongera</li>
+                                            <li class="submenu">Pink & Purple</li>
+                                            <li class="submenu">Red & Rust</li>
+                                            <li class="submenu">White & Ivories</li>
+                                            <li class="submenu">Yellow & Gold</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading">carpet option</li>
+                                            <li class="submenu">Area Rugs</li>
+                                            <li class="submenu">Custom Area Rugs</li>
+                                            <li class="submenu">Custom Stair Runners</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/carpet-yukon-maple_600x600.jpg?v=1633641800"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-          
-                      <div class="dropdown">
+                    </div>
+                    <div class="dropdown">
                         <button class="dropbtn">hardwood</button>
                         <div class="dropdown-content">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Type</a>
-                                <a class="sub_menu" href="#">Engineered Hardwood</a>
-                                <a class="sub_menu" href="#">Solid Hardwood</a>
-                                <a class="sub_menu" href="#">All Hardwood</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Shade</a>
-                                <a class="sub_menu" href="#">BLight</a>
-                                <a class="sub_menu" href="#">Medium</a>
-                                <a class="sub_menu" href="#">Dark</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Species</a>
-                                <a class="sub_menu" href="#">Acacia</a>
-                                <a class="sub_menu" href="#">Bamboo</a>
-                                <a class="sub_menu" href="#">Birch</a>
-                                <a class="sub_menu" href="#">Cherry</a>
-                                <a class="sub_menu" href="#">Cork</a>
-                                <a class="sub_menu" href="#">Exotic</a>
-                                <a class="sub_menu" href="#">Hickory</a>
-                                <a class="sub_menu" href="#">Maple</a>
-                                <a class="sub_menu" href="#">Oak</a>
-                                <a class="sub_menu" href="#">Pecan</a>
-                                <a class="sub_menu" href="#">Walnut</a>
-                              </div>
-          
-                              <div class="col-md-4">
-                                <div class="collection-image">
-                                  <img
-                                    src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hardwood-american-honoor_7984b427-2cca-41c3-9255-54bcc1e95045_600x600.jpg?v=1633641820"
-                                    alt="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Type</li>
+                                            <li class="sub_menu" href="#">Engineered Hardwood</li>
+                                            <li class="sub_menu" href="#">Solid Hardwood</li>
+                                            <li class="sub_menu" href="#">All Hardwood</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Shade</li>
+                                            <li class="sub_menu" href="#">BLight</li>
+                                            <li class="sub_menu" href="#">Medium</li>
+                                            <li class="sub_menu" href="#">Dark</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Species</li>
+                                            <li class="sub_menu" href="#">Acacia</li>
+                                            <li class="sub_menu" href="#">Bamboo</li>
+                                            <li class="sub_menu" href="#">Birch</li>
+                                            <li class="sub_menu" href="#">Cherry</li>
+                                            <li class="sub_menu" href="#">Cork</li>
+                                            <li class="sub_menu" href="#">Exotic</li>
+                                            <li class="sub_menu" href="#">Hickory</li>
+                                            <li class="sub_menu" href="#">Maple</li>
+                                            <li class="sub_menu" href="#">Oak</li>
+                                            <li class="sub_menu" href="#">Pecan</li>
+                                            <li class="sub_menu" href="#">Walnut</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hardwood-american-honoor_7984b427-2cca-41c3-9255-54bcc1e95045_600x600.jpg?v=1633641820"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-          
-                      <div class="dropdown">
+                    </div>
+                    <div class="dropdown">
                         <button class="dropbtn">luxury vinyl</button>
                         <div class="dropdown-content">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Type</a>
-                                <a class="sub_menu" href="#">Luxury Vinyl Plank</a>
-                                <a class="sub_menu" href="#">Luxury Vinyl Tile</a>
-                                <a class="sub_menu" href="#">All Luxury Vinyl</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Look</a>
-                                <a class="sub_menu" href="#">Wood Look</a>
-                                <a class="sub_menu" href="#">Stone Look</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Color</a>
-                                <a class="sub_menu" href="#">Beige & Browns</a>
-                                <a class="sub_menu" href="#">Blues</a>
-                                <a class="sub_menu" href="#">Greens</a>
-                                <a class="sub_menu" href="#">Grey & Black</a>
-                                <a class="sub_menu" href="#">Multi-Color</a>
-                                <a class="sub_menu" href="#">Reds & Rusts</a>
-                                <a class="sub_menu" href="#">Whites & Ivories</a>
-                                <a class="sub_menu" href="#">Yellows & Golds</a>
-                              </div>
-          
-                              <div class="col-md-4">
-                                <div class="collection-image">
-                                  <img
-                                    src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/Luxury-vinyl-alto-plank_600x600.jpg?v=1633658862"
-                                    alt="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Type</li>
+                                            <li class="sub_menu" href="#">Luxury Vinyl Plank</li>
+                                            <li class="sub_menu" href="#">Luxury Vinyl Tile</li>
+                                            <li class="sub_menu" href="#">All Luxury Vinyl</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Look</li>
+                                            <li class="sub_menu" href="#">Wood Look</li>
+                                            <li class="sub_menu" href="#">Stone Look</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <li class="heading" href="#">Shop by Color</li>
+                                        <li class="sub_menu" href="#">Beige & Browns</li>
+                                        <li class="sub_menu" href="#">Blues</li>
+                                        <li class="sub_menu" href="#">Greens</li>
+                                        <li class="sub_menu" href="#">Grey & Black</li>
+                                        <li class="sub_menu" href="#">Multi-Color</li>
+                                        <li class="sub_menu" href="#">Reds & Rusts</li>
+                                        <li class="sub_menu" href="#">Whites & Ivories</li>
+                                        <li class="sub_menu" href="#">Yellows & Golds</li>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/Luxury-vinyl-alto-plank_600x600.jpg?v=1633658862"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-          
-                      <div class="dropdown">
+                    </div>
+
+                    <div class="dropdown">
                         <button class="dropbtn">laminate</button>
                         <div class="dropdown-content">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Type</a>
-                                <a class="sub_menu" href="#">Wood Laminate</a>
-                                <a class="sub_menu" href="#">All Laminate</a>
-                              </div>
-                             
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Shade</a>
-                                <a class="sub_menu" href="#">Light</a>
-                                <a class="sub_menu" href="#">Medium</a>
-                                <a class="sub_menu" href="#">Dark</a>
-                              </div>
-                             
-                              <div class="col-md-4">
-                                <div class="collection-image">
-                                  <img
-                                    src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/laminate_600x600.jpg?v=1633641876"
-                                    alt="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Type</li>
+                                            <li class="sub_menu" href="#">Wood Laminate</li>
+                                            <li class="sub_menu" href="#">All Laminate</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Shade</li>
+                                            <li class="sub_menu" href="#">Light</li>
+                                            <li class="sub_menu" href="#">Medium</li>
+                                            <li class="sub_menu" href="#">Dark</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/laminate_600x600.jpg?v=1633641876"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-          
-                      <div class="dropdown">
+                    </div>
+
+                    <div class="dropdown">
                         <button class="dropbtn">tile</button>
                         <div class="dropdown-content">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Type</a>
-                                <a class="sub_menu" href="#">Ceramic</a>
-                                <a class="sub_menu" href="#"> Glass & Metal</a>
-                                <a class="sub_menu" href="#">Porcelain</a>
-                                <a class="sub_menu" href="#">Quartz</a>
-                                <a class="sub_menu" href="#">Quarry & Saltillo</a>
-                                <a class="sub_menu" href="#">Stone</a>
-                                <a class="sub_menu" href="#">All Tile</a>
-                              </div>
-                            
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Color</a>
-                                <a class="sub_menu" href="#">Beige & Brown</a>
-                                <a class="sub_menu" href="#">Blue</a>
-                                <a class="sub_menu" href="#">Green</a>
-                                <a class="sub_menu" href="#">Grey & Black</a>
-                                <a class="sub_menu" href="#">Multi-Color</a>
-                                <a class="sub_menu" href="#">Orange</a>
-                                <a class="sub_menu" href="#">Pink & Purple</a>
-                                <a class="sub_menu" href="#">Red & Rust</a>
-                                <a class="sub_menu" href="#">White & Ivories</a>
-                                <a class="sub_menu" href="#">Yellow & Gold</a>
-                              </div>
-          
-                              <div class="col-md-4">
-                                <div class="collection-image">
-                                  <img
-                                    src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/tile_600x600.jpg?v=1633641904"
-                                    alt="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Type</li>
+                                            <li class="sub_menu" href="#">Ceramic</li>
+                                            <li class="sub_menu" href="#"> Glass & Metal</li>
+                                            <li class="sub_menu" href="#">Porcelain</li>
+                                            <li class="sub_menu" href="#">Quartz</li>
+                                            <li class="sub_menu" href="#">Quarry & Saltillo</li>
+                                            <li class="sub_menu" href="#">Stone</li>
+                                            <li class="sub_menu" href="#">All Tile</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Color</li>
+                                            <li class="sub_menu" href="#">Beige & Brown</li>
+                                            <li class="sub_menu" href="#">Blue</li>
+                                            <li class="sub_menu" href="#">Green</li>
+                                            <li class="sub_menu" href="#">Grey & Black</li>
+                                            <li class="sub_menu" href="#">Multi-Color</li>
+                                            <li class="sub_menu" href="#">Orange</li>
+                                            <li class="sub_menu" href="#">Pink & Purple</li>
+                                            <li class="sub_menu" href="#">Red & Rust</li>
+                                            <li class="sub_menu" href="#">White & Ivories</li>
+                                            <li class="sub_menu" href="#">Yellow & Gold</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/tile_600x600.jpg?v=1633641904"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-          
-                      <div class="dropdown">
+                    </div>
+
+                    <div class="dropdown">
                         <button class="dropbtn"> area rugs</button>
                         <div class="dropdown-content">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Size</a>
-                                <a class="sub_menu" href="#">8 x 10</a>
-                                <a class="sub_menu" href="#">6 x 9</a>
-                                <a class="sub_menu" href="#">5 x 7</a>
-                                <a class="sub_menu" href="#">3 x 5</a>
-                                <a class="sub_menu" href="#">All Rugs</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Shop by Style</a>
-                                <a class="sub_menu" href="#">Solid</a>
-                                <a class="sub_menu" href="#">Pattern</a>
-                                <a class="sub_menu" href="#">Shag</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Carpet Options</a>
-                                <a class="sub_menu" href="#">Custom Area Rugs</a>
-                                <a class="sub_menu" href="#">Custom Stair Runners</a>
-                              </div>
-                            
-                              <div class="col-md-4">
-                                <div class="collection-image">
-                                  <img
-                                    src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/rug_600x600.jpg?v=1633641925"
-                                    alt="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Size</li>
+                                            <li class="sub_menu" href="#">8 x 10</li>
+                                            <li class="sub_menu" href="#">6 x 9</li>
+                                            <li class="sub_menu" href="#">5 x 7</li>
+                                            <li class="sub_menu" href="#">3 x 5</li>
+                                            <li class="sub_menu" href="#">All Rugs
+                                            <li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Shop by Style</li>
+                                            <li class="sub_menu" href="#">Solid</li>
+                                            <li class="sub_menu" href="#">Pattern</li>
+                                            <li class="sub_menu" href="#">Shag</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Carpet Options</li>
+                                            <li class="sub_menu" href="#">Custom Area Rugs</li>
+                                            <li class="sub_menu" href="#">Custom Stair Runners</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/rug_600x600.jpg?v=1633641925"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-          
-                      <div class="dropdown">
+                    </div>
+
+                    <div class="dropdown">
                         <button class="dropbtn"> design & plan </button>
                         <div class="dropdown-content">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-6 category">
-                                <a class="heading" href="#">Explore Design & Plan</a>
-                                <a class="sub_menu" href="#">Just Floor You ™ Design Blog</a>
-                                <a class="sub_menu" href="#">Customer Reviews</a>
-                                <a class="sub_menu" href="#">Room Visualizer</a>
-                                <a class="sub_menu" href="#">Flooring FAQs</a>
-                                <a class="sub_menu" href="#">Preparing for Installation Guide</a>
-                                <a class="sub_menu" href="#">Financing Your Floor</a>
-                                <a class="sub_menu" href="#">What to Ask Your Flooring Expert</a>
-                                <a class="sub_menu" href="#">Selecting the Right Floor For You</a>
-                              </div>
-                     
-                              <div class="col-md-4">
-                                <div class="collection-image">
-                                  <img
-                                    src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/plan-gdccd83e0a_640_600x600.jpg?v=1633661554"
-                                    alt="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 category">
+                                        <ul>
+                                            <li class="heading" href="#">Explore Design & Plan</li>
+                                            <li class="sub_menu" href="#">Just Floor You ™ Design Blog</li>
+                                            <li class="sub_menu" href="#">Customer Reviews</li>
+                                            <li class="sub_menu" href="#">Room Visualizer</li>
+                                            <li class="sub_menu" href="#">Flooring FAQs</li>
+                                            <li class="sub_menu" href="#">Preparing for Installation Guide</li>
+                                            <li class="sub_menu" href="#">Financing Your Floor</li>
+                                            <li class="sub_menu" href="#">Selecting the Right Floor For You</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/plan-gdccd83e0a_640_600x600.jpg?v=1633661554"
+                                                alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-          
-                      <div class="dropdown">
+                    </div>
+
+                    <div class="dropdown">
                         <button class="dropbtn">care & support</button>
                         <div class="dropdown-content " style=" right: 0;">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#">Floor Care Tips</a>
-                                <a class="sub_menu" href="#">Carpet</a>
-                                <a class="sub_menu" href="#">Hardwood</a>
-                                <a class="sub_menu" href="#">Laminate</a>
-                                <a class="sub_menu" href="#">Tile</a>
-                                <a class="sub_menu" href="#">Luxury Vinyl</a>
-                              </div>
-                              
-                              <div class="col-md-4 category">
-                                <a class="heading" href="#">What to Expect From Your New Floor</a>
-                                <a class="sub_menu" href="#">Carpet</a>
-                                <a class="sub_menu" href="#">Hardwood</a>
-                                <a class="sub_menu" href="#">Tile, Luxury Vinyl, Laminate</a>
-                              </div>
-          
-                              <div class="col-md-2 category">
-                                <a class="heading" href="#"> Information & Support</a>
-                                <a class="sub_menu" href="#">Warranty Information</a>
-                                <a class="sub_menu" href="#">Customer Service</a>
-                              </div>
-                             
-                              <div class="col-md-3 category">
-                                <a class="heading" href="#">  Need Help Right Away?</a>
-                                <a class="sub_menu" href="#">Call 1-888-250-9983</a>
-                                <a class="sub_menu" href="#">Email customercare@riterug.com</a>
-                                <a class="sub_menu" href="#">Contact Us</a>
-                              </div>
-                             
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#">Floor Care Tips</li>
+                                            <li class="sub_menu" href="#">Carpet</li>
+                                            <li class="sub_menu" href="#">Hardwood</li>
+                                            <li class="sub_menu" href="#">Laminate</li>
+                                            <li class="sub_menu" href="#">Tile</li>
+                                            <li class="sub_menu" href="#">Luxury Vinyl</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4 category">
+                                        <ul>
+                                            <li class="heading" href="#">What to Expect From Your New Floor</li>
+                                            <li class="sub_menu" href="#">Carpet</li>
+                                            <li class="sub_menu" href="#">Hardwood</li>
+                                            <li class="sub_menu" href="#">Tile, Luxury Vinyl, Laminate</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 category">
+                                        <ul>
+                                            <li class="heading" href="#"> Information & Support</i>
+                                            <li class="sub_menu" href="#">Warranty Information</li>
+                                            <li class="sub_menu" href="#">Customer Service</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-3 category">
+                                        <ul>
+                                            <li class="sub_menu" href="#">Call 1-888-250-9983</li>
+                                            <li class="sub_menu" href="#">Email customercare@riterug.com</li>
+                                            <li class="sub_menu" href="#">Contact Us</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                  </nav>
-                  <!-- CAROUSOL WEB -->
-  <div class="container-fluid carousel-main">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="item active">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-update-perfect-pair_2000x.jpg?v=1643600877"
-            alt=" " style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-update-perfect-pair2_2000x.jpg?v=1643600921"
-            alt=" " style="width:100%;">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CAROUSOL RESPONSIVE -->
-  <div class="container-fluid carousel-responsive">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-mobile-perfect-pair_600x.jpg?v=1643601080"
-            alt=" " style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-mobile-perfect-pair2_600x.jpg?v=1643601169"
-            alt=" " style="width:100%;">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- CAROUSOL END -->
-
-  <!-- SECTION 1 -->
-  <div class="container-fluid">
-    <div class="row text-center banner1" style="background-color:#414042;">
-      <h1 style="color:#ffffff;font-size:40px">24 Month Financing Available</h1>
-      <p style="color:#fafafa;font-size:27px"> Buy Now &amp; Pay Over Time </p>
-
-      <a href="#">Learn More<i class="fas fa-caret-right"></i></a>
-    </div>
-  </div>
-  <!-- SECTION 1 -->
-
-
-  <!-- SECTION 2 -->
-  <div class="container-fluid floor-material">
-    <h2 class="text-center">Find Your Perfect Floor</h2>
-
-    <p class="subcontent">
-      Whether you are transforming one room or your whole house, we have the
-      perfect floor for your space, lifestyle and budget. Need a child and
-      pet-proof, high traffic, waterproof flooring solution? We've got you
-      covered. From WOW-worthy Luxury Vinyl Flooring to low maintenance
-      Laminate Flooring, we have options to match your lifestyle.
-      <br />
-      <br />
-    </p>
-
-    <div class="row">
-      <div class="col-sm-6 col-xs-12 nopad">
-        <div class="image-wrap">
-          <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-carpet2_600x.jpg?v=1627654659" alt=" "
-            class="imgrow1" />
-          <div class="white-sticker">
-            <a href="#">Carpet<i class="fas fa-caret-right"></i></a>
-          </div>
-        </div>
-        <div class="subcontent"></div>
-      </div>
-
-
-      <div class="col-sm-6 col-xs-12 nopad">
-        <div class="image-wrap">
-          <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-luxvinyl_600x.jpg?v=1627654682" alt=" "
-            class="imgrow1" />
-          <div class="white-sticker">
-            <a href="#">Luxury Vinyl <i class="fas fa-caret-right"></i></a>
-          </div>
-        </div>
-        <div class="subcontent"></div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container-fluid floor-material">
-    <div class="row">
-      <div class="col-sm-3 col-xs-12">
-        <div class="image-wrap">
-          <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-hardwood_600x.jpg?v=1627654705" alt=" "
-            class="imgrow2" />
-          <div class="white-sticker1">
-            <a href="#">Hardwood<i class="fas fa-caret-right"></i></a>
-          </div>
-        </div>
-        <div class="subcontent"></div>
-      </div>
-      <div class="col-sm-3 col-xs-12">
-        <div class="image-wrap">
-          <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-tile_600x.jpg?v=1627654731" alt=" "
-            class="imgrow2" />
-          <div class="white-sticker1">
-            <a href="#">Tile<i class="fas fa-caret-right"></i></a>
-          </div>
-        </div>
-        <div class="subcontent"></div>
-      </div>
-      <div class="col-sm-3 col-xs-12">
-        <div class="image-wrap">
-          <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/perfect-floor-laminate_600x.jpg?v=1607497724"
-            alt=" " class="imgrow2" />
-          <div class="white-sticker1">
-            <a href="#">Laminate<i class="fas fa-caret-right"></i></a>
-          </div>
-        </div>
-        <div class="subcontent"></div>
-      </div>
-      <div class="col-sm-3 col-xs-12">
-        <div class="image-wrap">
-          <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-explore_600x.jpg?v=1627654760" alt=" "
-            class="imgrow2" />
-          <div class="white-sticker1">
-            <a href="#">Design & Plan<i class="fas fa-caret-right"></i></a>
-          </div>
-        </div>
-        <div class="subcontent"></div>
-      </div>
-    </div>
-  </div>
-  <!-- SECTION 2 -->
-
-
-
-  <!-- SECTION 3 -->
-
-  <div class="container-fluid design-plan">
-    <div class="row designAndPlan text-center">
-      <h1 class="boldFont">custom designed for impact</h1>
-      <h2>
-        Explore custom stair runners and area rug designs, created
-        specifically to fit in your space, your lifestyle and your budget.
-      </h2>
-
-      <div class="col-sm-4 col-xs-12 item">
-        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-stairrunner_600x.jpg?v=1627652169" alt="" />
-        <p>Custom Stair Runner</p>
-        <span class="subcontent">Enhance your home with a stylish and durable stair runner designed
-          specifically for your busy household.<span>
-            <a class="boldFont" href="#">learn more</a>
-          </span></span>
-      </div>
-
-      <div class="col-sm-4 col-xs-12 item">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/coordinate-rug-stairrunner_600x.jpg?v=1607498440"
-          alt="" />
-        <p>Coordinate The Look</p>
-        <span class="subcontent">Make an amazing impact by coordinating your custom stair runner and
-          area rug designs.</span>
-      </div>
-
-      <div class="col-sm-4 col-xs-12 item">
-        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-arearug_600x.jpg?v=1627652260" alt="" />
-        <p>Custom Area Rugs</p>
-        <span class="subcontent">Create the look and feel you want in the exact size you need to fit
-          your space and the way you live.<span>
-            <a class="boldFont" href="#">learn more</a>
-          </span></span>
-      </div>
-    </div>
-
-    <div class="row text-center banner">
-      <h1>RiteRug Flooring Your Style at the Lowest Prices.™</h1>
-      <p></p>
-    </div>
-  </div>
-
-  <!-- SECTION 3 -->
-
-  <!-- FOOTER -->
-
-  <footer>
-    <div class="container-fluid" style="margin-top: 60px">
-      <div class="row">
-        <div class="col-md-12">
-          <footer class="footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-2 m-b-30">
-                  <div class="footer-title m-t-5 m-b-20 p-b-8">
-                    customer service
-                    <i class="fa-solid fa-chevron-down" onclick="shopOpen()" ondblclick="shopClose()"></i>
-                  </div>
-
-                  <div class="footer-links" id="footer_shop">
-                    <a href="#"> contact us </a>
-                    <a href="#"> customer care</a>
-                    <a href="#"> warranty information </a>
-                    <a href="#"> flooring FAQs </a>
-                    <a href="#"> financing</a>
-                  </div>
                 </div>
-                <div class="col-md-2 m-b-30">
-                  <div class="footer-title m-t-5 m-b-20 p-b-8">
-                    about us<i class="fa-solid fa-chevron-down" onclick="suppOpen()" ondblclick="suppClose()"></i>
-                  </div>
-                  <div class="footer-links" id="footer_support">
-                    <a href="#"> Why RiteRug </a>
-                    <a href="#"> Flooring Inspiration</a>
-                    <a href="#"> Floor Visualizer </a>
-                    <a href="#"> Careers </a>
-                    <a href="#"> Become A Supplier </a>
-                  </div>
-                </div>
-                <div class="col-md-3 m-b-30">
-                  <div class="footer-title m-t-5 m-b-20 p-b-8">
-                    product categories<i class="fa-solid fa-chevron-down" onclick="compOpen()"
-                      ondblclick="compClose()"></i>
-                  </div>
-                  <div class="footer-links" id="footer_company">
-                    <a href="#"> carpet </a>
-                    <a href="#"> hardwood flooring </a>
-                    <a href="#"> luxury vinyl flooring </a>
-                    <a href="#"> laminate flooring </a>
-                    <a href="#"> tile flooring </a>
-                    <a href="#"> area rugs </a>
-                  </div>
-                </div>
-                <div class="col-md-2 m-b-30">
-                  <div class="footer-title m-t-5 m-b-20 p-b-8">
-                    other products<i class="fa-solid fa-chevron-down" onclick="AccOpen()" ondblclick="AccClose()"></i>
-                  </div>
-                  <div class="footer-links" id="footer_Acc">
-                    <a href="#"> customer area rugs </a>
-                    <a href="#"> customer stair runners </a>
-                    <a href="#"> custom countertops </a>
-                    <a href="#"> window treatments </a>
-                    <a href="#"> hardwood refinishing </a>
-                    <a href="#"> carpet cleaning </a>
-                  </div>
-                </div>
-                <div class="col-md-3 m-b-30">
-                  <div class="footer-title m-t-5 m-b-20 p-b-8">
-                    locations<i class="fa-solid fa-chevron-down" onclick="AccOpen()" ondblclick="AccClose()"></i>
-                  </div>
-                  <div class="footer-links" id="footer_Acc">
-                    <a href="#"> in-home shopping </a>
-                    <a href="#"> showrooms </a>
-                    <a href="#"> outlets </a>
-                    <div class="footer-title m-t-5 m-b-20 p-b-8">
-                      became inspired!
+            </nav>
+        </div>
+    </header>
+
+    <!-- HEADER ENDS -->
+    <section>
+        <!-- CAROUSOL WEB -->
+        <div class="container-fluid carousel-main">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-update-perfect-pair_2000x.jpg?v=1643600877"
+                            alt=" " style="width:100%;">
                     </div>
-                    <a href="#"> Styles, Trends, Special Offers. </a>
-                  </div>
+
+                    <div class="item">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-update-perfect-pair2_2000x.jpg?v=1643600921"
+                            alt=" " style="width:100%;">
+                    </div>
                 </div>
-
-              </div>
-
-              <div class="row footer-bottom text-center">
-                <ul class="list-unstyled social-icons" style="display: inline-block;">
-                  <li>
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/instagram_icon.png?v=12252155220124269531"
-                      alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/facebook_icon.png?v=14641750940887315419"
-                      alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/pinterest_icon.png?v=4373721558534383297"
-                      alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/linkedin_icon.png?v=3803509516151821761"
-                      alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/houzz_icon.png?v=6774984069539362322"
-                      alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
-                  </li>
-                </ul>
-                <div class="question">
-                  <span>Questions? Call Us 1-888-250-9983</span>
-                </div>
-              </div>
-
-              <div class="col-xs-12">
-                <ul class="list-unstyled installers">
-                  <li><a href="#">Installer Disclosure</a> | </li>
-                  <li><a href="#">Privacy Policy</a> | </li>
-                  <li><a href="#">Return Policy</a></li>
-                </ul>
-                <div class="col-md-2 m-b-30">
-        <div class="footer-title m-t-5 m-b-20 p-b-8">Account<i class="fa fa-plus"
-                onclick="AccOpen()" ondblclick="AccClose()"></i></div>
-        <div class="footer-links" id="footer_Acc">
-            <a href="#"> Login </a>
-            <a href="#"> Create Account </a>
-            <a href="#"> Order Status </a>
+            </div>
         </div>
-              </div>
-              <p class="copyright">
-                ©RITERUG® 4450 Poth Road, Whitehall, OH 43213 - (614) 261-6060. All Rights Reserved.
-              </p>
+
+        <!-- CAROUSOL RESPONSIVE -->
+        <div class="container-fluid carousel-responsive">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-mobile-perfect-pair_600x.jpg?v=1643601080"
+                            alt=" " style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-mobile-perfect-pair2_600x.jpg?v=1643601169"
+                            alt=" " style="width:100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CAROUSOL END -->
+
+        <!-- SECTION 1 -->
+        <div class="container-fluid">
+            <div class="row text-center banner1" style="background-color:#414042;">
+                <h1 style="color:#ffffff;font-size:40px">24 Month Financing Available</h1>
+                <p style="color:#fafafa;font-size:27px"> Buy Now &amp; Pay Over Time </p>
+
+                <a href="#">Learn More<i class="fas fa-caret-right"></i></a>
+            </div>
+        </div>
+        <!-- SECTION 1 -->
 
 
+        <!-- SECTION 2 -->
+        <div class="container-fluid floor-material">
+            <h2 class="text-center">Find Your Perfect Floor</h2>
+
+            <p class="subcontent">
+                Whether you are transforming one room or your whole house, we have the
+                perfect floor for your space, lifestyle and budget. Need a child and
+                pet-proof, high traffic, waterproof flooring solution? We've got you
+                covered. From WOW-worthy Luxury Vinyl Flooring to low maintenance
+                Laminate Flooring, we have options to match your lifestyle.
+                <br />
+                <br />
+            </p>
+
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 nopad">
+                    <div class="image-wrap">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-carpet2_600x.jpg?v=1627654659"
+                            alt=" " class="imgrow1" />
+                        <div class="white-sticker">
+                            <a href="#">Carpet<i class="fas fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="subcontent"></div>
+                </div>
+
+
+                <div class="col-sm-6 col-xs-12 nopad">
+                    <div class="image-wrap">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-luxvinyl_600x.jpg?v=1627654682"
+                            alt=" " class="imgrow1" />
+                        <div class="white-sticker">
+                            <a href="#">Luxury Vinyl <span class="fas fa-caret-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="subcontent"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid floor-material">
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="image-wrap">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-hardwood_600x.jpg?v=1627654705"
+                            alt=" " class="imgrow2" />
+                        <div class="white-sticker1">
+                            <a href="#">Hardwood<span class="fas fa-caret-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="subcontent"></div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="image-wrap">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-tile_600x.jpg?v=1627654731"
+                            alt=" " class="imgrow2" />
+                        <div class="white-sticker1">
+                            <a href="#">Tile<span class="fas fa-caret-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="subcontent"></div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="image-wrap">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/perfect-floor-laminate_600x.jpg?v=1607497724"
+                            alt=" " class="imgrow2" />
+                        <div class="white-sticker1">
+                            <a href="#">Laminate<span class="fas fa-caret-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="subcontent"></div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="image-wrap">
+                        <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-explore_600x.jpg?v=1627654760"
+                            alt=" " class="imgrow2" />
+                        <div class="white-sticker1">
+                            <a href="#">Design & Plan<span class="fas fa-caret-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="subcontent"></div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 2 -->
+
+
+
+        <!-- SECTION 3 -->
+
+        <div class="container-fluid design-plan">
+            <div class="row designAndPlan text-center">
+                <h1 class="boldFont">custom designed for impact</h1>
+                <h2>
+                    Explore custom stair runners and area rug designs, created
+                    specifically to fit in your space, your lifestyle and your budget.
+                </h2>
+
+                <div class="col-sm-4 col-xs-12 item">
+                    <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-stairrunner_600x.jpg?v=1627652169"
+                        alt="" />
+                    <p>Custom Stair Runner</p>
+                    <span class="subcontent">Enhance your home with a stylish and durable stair runner designed
+                        specifically for your busy household.<span>
+                            <a class="boldFont" href="#">learn more</a>
+                        </span></span>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 item">
+                    <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/coordinate-rug-stairrunner_600x.jpg?v=1607498440"
+                        alt="" />
+                    <p>Coordinate The Look</p>
+                    <span class="subcontent">Make an amazing impact by coordinating your custom stair runner and
+                        area rug designs.</span>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 item">
+                    <img src="https://cdn.shopify.com/s/files/1/0456/7790/4032/files/hp-arearug_600x.jpg?v=1627652260"
+                        alt="" />
+                    <p>Custom Area Rugs</p>
+                    <span class="subcontent">Create the look and feel you want in the exact size you need to fit
+                        your space and the way you live.<span>
+                            <a class="boldFont" href="#">learn more</a>
+                        </span></span>
+                </div>
             </div>
 
+            <div class="row text-center banner">
+                <h1>RiteRug Flooring Your Style at the Lowest Prices.™</h1>
+                <p></p>
+            </div>
         </div>
-      </div>
-    </div>
-    
-    </div>
-  </footer>
 
-  <!-- FOOTER -->
-            
+        <!-- SECTION 3 -->
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid" style="margin-top: 60px">
+          <div class="row">
+            <div class="col-md-12">
+              <footer class="footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-2 m-b-30">
+                      <div class="footer-title m-t-5 m-b-20 p-b-8">
+                        customer service
+                        <span class="fa-solid fa-chevron-down" onclick="shopOpen()" ondblclick="shopClose()"></span>
+                      </div>
+    
+                      <div class="footer-links" id="footer_shop">
+                        <a href="#"> contact us </a>
+                        <a href="#"> customer care</a>
+                        <a href="#"> warranty information </a>
+                        <a href="#"> flooring FAQs </a>
+                        <a href="#"> financing</a>
+                      </div>
+                    </div>
+                    <div class="col-md-2 m-b-30">
+                      <div class="footer-title m-t-5 m-b-20 p-b-8">
+                        about us<span class="fa-solid fa-chevron-down" onclick="suppOpen()" ondblclick="suppClose()"></span>
+                      </div>
+                      <div class="footer-links" id="footer_support">
+                        <a href="#"> Why RiteRug </a>
+                        <a href="#"> Flooring Inspiration</a>
+                        <a href="#"> Floor Visualizer </a>
+                        <a href="#"> Careers </a>
+                        <a href="#"> Become A Supplier </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 m-b-30">
+                      <div class="footer-title m-t-5 m-b-20 p-b-8">
+                        product categories<span class="fa-solid fa-chevron-down" onclick="compOpen()"
+                          ondblclick="compClose()"></span>
+                      </div>
+                      <div class="footer-links" id="footer_company">
+                        <a href="#"> carpet </a>
+                        <a href="#"> hardwood flooring </a>
+                        <a href="#"> luxury vinyl flooring </a>
+                        <a href="#"> laminate flooring </a>
+                        <a href="#"> tile flooring </a>
+                        <a href="#"> area rugs </a>
+                      </div>
+                    </div>
+                    <div class="col-md-2 m-b-30">
+                      <div class="footer-title m-t-5 m-b-20 p-b-8">
+                        other products<span class="fa-solid fa-chevron-down" onclick="AccOpen()" ondblclick="AccClose()"></span>
+                      </div>
+                      <div class="footer-links" id="footer_Acc">
+                        <a href="#"> customer area rugs </a>
+                        <a href="#"> customer stair runners </a>
+                        <a href="#"> custom countertops </a>
+                        <a href="#"> window treatments </a>
+                        <a href="#"> hardwood refinishing </a>
+                        <a href="#"> carpet cleaning </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 m-b-30">
+                      <div class="footer-title m-t-5 m-b-20 p-b-8">
+                        locations<span class="fa-solid fa-chevron-down" onclick="AccOpen()" ondblclick="AccClose()"></span>
+                      </div>
+                      <div class="footer-links" id="footer_Acc">
+                        <a href="#"> in-home shopping </a>
+                        <a href="#"> showrooms </a>
+                        <a href="#"> outlets </a>
+                        <div class="footer-title m-t-5 m-b-20 p-b-8">
+                          became inspired!
+                        </div>
+                        <a href="#"> Styles, Trends, Special Offers. </a>
+                      </div>
+                      <form>
+                        <input type="text" id="mail" placeholder="Enter Your Mail">
+                        <button class="signupbtn">Sign Up</button>
+                    </form>
+                    </div>
+    
+                  </div>
+    
+                  <div class="row footer-bottom text-center">
+                    <ul class="list-unstyled social-icons" style="display: inline-block;">
+                      <li>
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/instagram_icon.png?v=12252155220124269531"
+                          alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/facebook_icon.png?v=14641750940887315419"
+                          alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/pinterest_icon.png?v=4373721558534383297"
+                          alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/linkedin_icon.png?v=3803509516151821761"
+                          alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0456/7790/4032/t/3/assets/houzz_icon.png?v=6774984069539362322"
+                          alt=" " style="padding-right: 10px; height: 25px; width: auto;"></a>
+                      </li>
+                    </ul>
+                    <div class="question">
+                      <span>Questions? Call Us 1-888-250-9983</span>
+                    </div>
+                  </div>
+    
+                  <div class="col-xs-12">
+                    <ul class="list-unstyled installers">
+                      <li><a href="#">Installer Disclosure</a> | </li>
+                      <li><a href="#">Privacy Policy</a> | </li>
+                      <li><a href="#">Return Policy</a></li>
+                    </ul>
+                  </div>
+                  <address class="copyright">
+                    ©RITERUG® 4450 Poth Road, Whitehall, OH 43213 - (614) 261-6060. All Rights Reserved.
+                  </address>
+    
+    
+                </div>
+    
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- FOOTER -->
 </body>
 
 </html>
